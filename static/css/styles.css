@@ -518,6 +518,120 @@ footer a:hover {
   color: var(--dark-teal);
 }
 
+/* Utility Classes for removing inline styles */
+
+/* Navigation anchors with offset */
+.nav-anchor {
+  padding-top: 130px;
+  margin-top: -130px;
+}
+
+/* WhatsApp icon spacing */
+.wa-icon {
+  margin-top: 10px;
+}
+
+/* Language switcher button styles */
+.lang-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.lang-btn:hover {
+  background: white;
+  color: var(--dark-teal);
+}
+
+/* CTA button small variant */
+.cta-button-small {
+  padding: 10px 20px;
+  font-size: 0.9em;
+}
+
+/* Intro paragraph */
+.intro-text {
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+/* Stats section */
+.stats-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-number {
+  color: var(--teal);
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Featured plans styles */
+.featured-plans h3 {
+  color: white;
+}
+
+.featured-plans h4 {
+  color: white;
+}
+
+.featured-plans p {
+  color: white;
+}
+
+.featured-plans-price {
+  color: white;
+  font-size: 1.8em;
+  margin: 20px 0;
+}
+
+/* Discount box */
+.discount-box {
+  margin-top: 50px;
+  padding: 30px;
+  background: #fff3e0;
+  border-radius: 10px;
+}
+
+.discount-box h3 {
+  color: var(--orange);
+}
+
+.discount-link {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer h2 {
+  color: white;
+}
+
+.footer-subtitle {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.footer-copyright {
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+/* Google Tag Manager iframe */
+.gtm-iframe {
+  display: none;
+  visibility: hidden;
+}
+
 /* Responsive Design */
 
 /* Hamburger Menu */
@@ -705,7 +819,7 @@ footer a:hover {
   }
 
   .service-card {
-    margin: 0 15px 20px 15px;
+    margin: 0 15px 20px;
     width: calc(100% - 30px);
     max-width: none;
     min-height: auto;
@@ -719,7 +833,7 @@ footer a:hover {
   section {
     padding: 60px 0;
   }
-  
+
   .content-wrapper {
     padding: 0 15px;
     max-width: 100%;
@@ -765,17 +879,17 @@ footer a:hover {
     width: calc(100% - 30px);
     box-sizing: border-box;
   }
-  
+
   .services {
     padding: 60px 0;
   }
-  
+
   .services .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .services h2,
   .services h3 {
     text-align: center;
@@ -804,11 +918,11 @@ footer a:hover {
     display: block;
     margin: 8px 0;
   }
-  
+
   footer p {
     line-height: 1.8;
   }
-  
+
   .contact-separator {
     display: none;
   }

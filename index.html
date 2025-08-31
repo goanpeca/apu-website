@@ -65,7 +65,7 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-KT28VD6L"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"
+        class="gtm-iframe"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -75,7 +75,7 @@
       target="_blank"
       aria-label="Contact us on WhatsApp"
     >
-      <i class="fab fa-whatsapp" style="margin-top: 10px" aria-hidden="true"></i>
+      <i class="fab fa-whatsapp wa-icon" aria-hidden="true"></i>
     </a>
 
     <!-- Encabezado con el logo -->
@@ -83,22 +83,7 @@
       <div class="header-content">
         <img src="static/images/favicon-source.jpg" alt="APU Viajes de Montaña" class="logo-img" />
         <div class="lang-switcher mobile-lang">
-          <a
-            href="en/"
-            style="
-              background: transparent;
-              border: 2px solid white;
-              color: white;
-              padding: 8px 16px;
-              border-radius: 20px;
-              text-decoration: none;
-              font-weight: 500;
-              transition: all 0.3s;
-            "
-            onmouseover="this.style.background='white'; this.style.color='var(--dark-teal)';"
-            onmouseout="this.style.background='transparent'; this.style.color='white';"
-            >EN</a
-          >
+          <a href="en/" class="lang-btn">EN</a>
         </div>
         <button
           class="hamburger"
@@ -117,27 +102,11 @@
           <a href="#galeria" data-es="Galería" data-en="Gallery">Galería</a>
           <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
           <div class="lang-switcher desktop-lang">
-            <a
-              href="en/"
-              style="
-                background: transparent;
-                border: 2px solid white;
-                color: white;
-                padding: 8px 16px;
-                border-radius: 20px;
-                text-decoration: none;
-                font-weight: 500;
-                transition: all 0.3s;
-              "
-              onmouseover="this.style.background='white'; this.style.color='var(--dark-teal)';"
-              onmouseout="this.style.background='transparent'; this.style.color='white';"
-              >EN</a
-            >
+            <a href="en/" class="lang-btn">EN</a>
           </div>
           <a
             href="https://wa.me/573160557537"
-            class="cta-button"
-            style="padding: 10px 20px; font-size: 0.9em"
+            class="cta-button cta-button-small"
             data-es="Reservar"
             data-en="Book Now"
             >Reservar</a
@@ -178,7 +147,7 @@
       <div class="content-wrapper">
         <h2 data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</h2>
         <p
-          style="font-size: 1.2em; line-height: 1.8"
+          class="intro-text"
           data-es="APU Viajes de Montaña es una empresa dedicada a guiar personas en experiencias auténticas de escalada y trekking, con un enfoque en el respeto por la montaña, la seguridad y el crecimiento interior. Nos especializamos en ayudar a escaladores de gimnasio a dar sus primeros pasos en la roca, con rutas cuidadosamente seleccionadas y guías con experiencia y sensibilidad cultural."
           data-en="APU Mountain Travel is a company dedicated to guiding people in authentic climbing and trekking experiences, with a focus on respect for the mountain, safety and inner growth. We specialize in helping gym climbers take their first steps on rock, with carefully selected routes and guides with experience and cultural sensitivity."
         >
@@ -188,25 +157,17 @@
           primeros pasos en la roca, con rutas cuidadosamente seleccionadas y guías con experiencia
           y sensibilidad cultural.
         </p>
-        <div
-          style="
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            flex-wrap: wrap;
-          "
-        >
+        <div class="stats-container">
           <div>
-            <h3 style="color: var(--teal); font-size: 2.5em; margin: 0">10+</h3>
+            <h3 class="stat-number">10+</h3>
             <p data-es="Años de Experiencia" data-en="Years of Experience">Años de Experiencia</p>
           </div>
           <div>
-            <h3 style="color: var(--teal); font-size: 2.5em; margin: 0">500+</h3>
+            <h3 class="stat-number">500+</h3>
             <p data-es="Aventuras Guiadas" data-en="Guided Adventures">Aventuras Guiadas</p>
           </div>
           <div>
-            <h3 style="color: var(--teal); font-size: 2.5em; margin: 0">100%</h3>
+            <h3 class="stat-number">100%</h3>
             <p data-es="Seguridad Garantizada" data-en="Safety Guaranteed">Seguridad Garantizada</p>
           </div>
         </div>
@@ -215,32 +176,23 @@
 
     <section class="services" id="servicios">
       <div class="content-wrapper">
-        <h2
-          data-es="Nuestros Servicios"
-          data-en="Our Services"
-          style="padding-top: 130px; margin-top: -130px"
-        >
+        <h2 data-es="Nuestros Servicios" data-en="Our Services" class="nav-anchor">
           Nuestros Servicios
         </h2>
 
         <div class="featured-plans">
-          <h3 style="color: white">🏔️ Curso Especializado</h3>
-          <h4 style="color: white">Transición del Muro a la Roca</h4>
-          <p style="color: white">
+          <h3>🏔️ Curso Especializado</h3>
+          <h4>Transición del Muro a la Roca</h4>
+          <p>
             Curso de 5 días para escalar de forma autónoma y segura rutas deportivas y
             tradicionales.
           </p>
           <div class="plan-badge">Máximo 3 personas por instructor</div>
-          <p style="color: white; font-size: 1.8em; margin: 20px 0"><strong>$1.650.000</strong></p>
-          <p style="color: white">✓ Póliza Magenta ✓ Equipos certificados UIAA ✓ Certificado</p>
+          <p class="featured-plans-price"><strong>$1.650.000</strong></p>
+          <p>✓ Póliza Magenta ✓ Equipos certificados UIAA ✓ Certificado</p>
         </div>
 
-        <h3
-          id="planes"
-          data-es="Planes Destacados"
-          data-en="Featured Plans"
-          style="padding-top: 130px; margin-top: -130px"
-        >
+        <h3 id="planes" data-es="Planes Destacados" data-en="Featured Plans" class="nav-anchor">
           Planes Destacados
         </h3>
         <div class="services-grid">
@@ -316,15 +268,10 @@
           </div>
         </div>
 
-        <div style="margin-top: 50px; padding: 30px; background: #fff3e0; border-radius: 10px">
-          <h3 style="color: var(--orange)">
+        <div class="discount-box">
+          <h3>
             ⭐ 10% DTO para miembros de
-            <a
-              href="https://www.trepa.co"
-              target="_blank"
-              style="color: var(--orange); text-decoration: underline"
-              >TREPA</a
-            >
+            <a href="https://www.trepa.co" target="_blank" class="discount-link">TREPA</a>
           </h3>
           <p>Ofrecemos planes de montaña a: Parque de los Nevados, Perú, Ecuador y Bolivia</p>
         </div>
@@ -404,9 +351,9 @@
 
     <!-- Pie de página -->
     <footer id="contacto">
-      <h2 style="color: white" data-es="¡Reserva Ahora!" data-en="Book Now!">¡Reserva Ahora!</h2>
+      <h2 data-es="¡Reserva Ahora!" data-en="Book Now!">¡Reserva Ahora!</h2>
       <p
-        style="font-size: 1.2em; margin: 20px 0"
+        class="footer-subtitle"
         data-es="Comienza tu aventura en la montaña con los mejores guías"
         data-en="Start your mountain adventure with the best guides"
       >
@@ -428,9 +375,7 @@
           ><i class="fab fa-whatsapp"></i
         ></a>
       </div>
-      <p style="margin-top: 40px; opacity: 0.8">
-        &copy; 2025, APU Viajes de Montaña | www.viajesapu.com
-      </p>
+      <p class="footer-copyright">&copy; 2025, APU Viajes de Montaña | www.viajesapu.com</p>
     </footer>
 
     <script src="static/js/main.js"></script>

@@ -65,7 +65,7 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-KT28VD6L"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"
+        class="gtm-iframe"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -75,7 +75,7 @@
       target="_blank"
       aria-label="Contact us on WhatsApp"
     >
-      <i class="fab fa-whatsapp" style="margin-top: 10px" aria-hidden="true"></i>
+      <i class="fab fa-whatsapp wa-icon" aria-hidden="true"></i>
     </a>
 
     <!-- Header with logo -->
@@ -83,22 +83,7 @@
       <div class="header-content">
         <img src="../static/images/favicon-source.jpg" alt="APU Mountain Travel" class="logo-img" />
         <div class="lang-switcher mobile-lang">
-          <a
-            href="../"
-            style="
-              background: transparent;
-              border: 2px solid white;
-              color: white;
-              padding: 8px 16px;
-              border-radius: 20px;
-              text-decoration: none;
-              font-weight: 500;
-              transition: all 0.3s;
-            "
-            onmouseover="this.style.background='white'; this.style.color='var(--dark-teal)';"
-            onmouseout="this.style.background='transparent'; this.style.color='white';"
-            >ES</a
-          >
+          <a href="../" class="lang-btn">ES</a>
         </div>
         <button
           class="hamburger"
@@ -117,29 +102,9 @@
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
           <div class="lang-switcher desktop-lang">
-            <a
-              href="../"
-              style="
-                background: transparent;
-                border: 2px solid white;
-                color: white;
-                padding: 8px 16px;
-                border-radius: 20px;
-                text-decoration: none;
-                font-weight: 500;
-                transition: all 0.3s;
-              "
-              onmouseover="this.style.background='white'; this.style.color='var(--dark-teal)';"
-              onmouseout="this.style.background='transparent'; this.style.color='white';"
-              >ES</a
-            >
+            <a href="../" class="lang-btn">ES</a>
           </div>
-          <a
-            href="https://wa.me/573160557537"
-            class="cta-button"
-            style="padding: 10px 20px; font-size: 0.9em"
-            >Book Now</a
-          >
+          <a href="https://wa.me/573160557537" class="cta-button cta-button-small">Book Now</a>
         </nav>
       </div>
     </header>
@@ -161,31 +126,23 @@
     <section class="intro section-alt">
       <div class="content-wrapper">
         <h2>About Us</h2>
-        <p style="font-size: 1.2em; line-height: 1.8">
+        <p class="intro-text">
           APU Mountain Travel is a company dedicated to guiding people in authentic climbing and
           trekking experiences, with a focus on respect for the mountain, safety and inner growth.
           We specialize in helping gym climbers take their first steps on rock, with carefully
           selected routes and guides with experience and cultural sensitivity.
         </p>
-        <div
-          style="
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            flex-wrap: wrap;
-          "
-        >
+        <div class="stats-container">
           <div>
-            <h3 style="color: var(--teal); font-size: 2.5em; margin: 0">10+</h3>
+            <h3 class="stat-number">10+</h3>
             <p>Years of Experience</p>
           </div>
           <div>
-            <h3 style="color: var(--teal); font-size: 2.5em; margin: 0">500+</h3>
+            <h3 class="stat-number">500+</h3>
             <p>Guided Adventures</p>
           </div>
           <div>
-            <h3 style="color: var(--teal); font-size: 2.5em; margin: 0">100%</h3>
+            <h3 class="stat-number">100%</h3>
             <p>Safety Guaranteed</p>
           </div>
         </div>
@@ -194,20 +151,18 @@
 
     <section class="services" id="services">
       <div class="content-wrapper">
-        <h2 style="padding-top: 130px; margin-top: -130px">Our Services</h2>
+        <h2 class="nav-anchor">Our Services</h2>
 
         <div class="featured-plans">
-          <h3 style="color: white">🏔️ Specialized Course</h3>
-          <h4 style="color: white">Wall to Rock Transition</h4>
-          <p style="color: white">
-            5-day course to climb autonomously and safely on sport and traditional routes.
-          </p>
+          <h3>🏔️ Specialized Course</h3>
+          <h4>Wall to Rock Transition</h4>
+          <p>5-day course to climb autonomously and safely on sport and traditional routes.</p>
           <div class="plan-badge">Maximum 3 people per instructor</div>
-          <p style="color: white; font-size: 1.8em; margin: 20px 0"><strong>$1,650,000</strong></p>
-          <p style="color: white">✓ Magenta Insurance ✓ UIAA Certified Equipment ✓ Certificate</p>
+          <p class="featured-plans-price"><strong>$1,650,000 COP</strong></p>
+          <p>✓ Magenta Insurance ✓ UIAA Certified Equipment ✓ Certificate</p>
         </div>
 
-        <h3 id="plans" style="padding-top: 130px; margin-top: -130px">Featured Plans</h3>
+        <h3 id="plans" class="nav-anchor">Featured Plans</h3>
         <div class="services-grid">
           <div class="service-card">
             <h3>1. Basic Climbing</h3>
@@ -217,7 +172,7 @@
               <li>Difficulty: Easy</li>
               <li>Enjoy unique landscapes!</li>
             </ul>
-            <div class="price">$140,000</div>
+            <div class="price">$140,000 COP</div>
           </div>
 
           <div class="service-card">
@@ -228,7 +183,7 @@
               <li>Difficulty: Easy-Moderate</li>
               <li>Reach the summit with expert guides!</li>
             </ul>
-            <div class="price">$240,000</div>
+            <div class="price">$240,000 COP</div>
           </div>
 
           <div class="service-card">
@@ -239,7 +194,7 @@
               <li>Difficulty: Easy-Moderate</li>
               <li>For all ages!</li>
             </ul>
-            <div class="price">$180,000</div>
+            <div class="price">$180,000 COP</div>
           </div>
 
           <div class="service-card">
@@ -250,15 +205,15 @@
               <li>Difficulty: Medium</li>
               <li>Perfect for the adventurous!</li>
             </ul>
-            <div class="price">$200,000</div>
+            <div class="price">$200,000 COP</div>
           </div>
 
           <div class="service-card">
             <h3>Hiking</h3>
             <p><strong>Explore nature</strong></p>
             <ul>
-              <li>Guita Antennas (4km): $90,000</li>
-              <li>Suesca Rocks (7km): $110,000</li>
+              <li>Guita Antennas (4km): $90,000 COP</li>
+              <li>Suesca Rocks (7km): $110,000 COP</li>
               <li>Difficulty: Easy to Moderate</li>
             </ul>
           </div>
@@ -271,19 +226,14 @@
               <li>Nevado del Tolima (5,220m)</li>
               <li>Includes Colasistencia insurance</li>
             </ul>
-            <div class="price">From $1,450,000</div>
+            <div class="price">From $1,450,000 COP</div>
           </div>
         </div>
 
-        <div style="margin-top: 50px; padding: 30px; background: #fff3e0; border-radius: 10px">
-          <h3 style="color: var(--orange)">
+        <div class="discount-box">
+          <h3>
             ⭐ 10% OFF for
-            <a
-              href="https://www.trepa.co"
-              target="_blank"
-              style="color: var(--orange); text-decoration: underline"
-              >TREPA</a
-            >
+            <a href="https://www.trepa.co" target="_blank" class="discount-link">TREPA</a>
             members
           </h3>
           <p>We offer mountain plans to: Los Nevados National Park, Peru, Ecuador and Bolivia</p>
@@ -294,7 +244,7 @@
     <!-- Gallery Carousel -->
     <section class="section-alt" id="gallery">
       <div class="content-wrapper">
-        <h2 style="padding-top: 130px; margin-top: -130px">Adventure Gallery</h2>
+        <h2 class="nav-anchor">Adventure Gallery</h2>
         <div class="gallery-carousel">
           <div class="carousel-container">
             <div class="carousel-track" id="carouselTrack">
@@ -364,10 +314,8 @@
 
     <!-- Footer -->
     <footer id="contact">
-      <h2 style="color: white; padding-top: 130px; margin-top: -130px">Book Now!</h2>
-      <p style="font-size: 1.2em; margin: 20px 0">
-        Start your mountain adventure with the best guides
-      </p>
+      <h2 class="nav-anchor">Book Now!</h2>
+      <p class="footer-subtitle">Start your mountain adventure with the best guides</p>
       <p>
         <a href="mailto:apuviajesdemontana@gmail.com">apuviajesdemontana@gmail.com</a>
         <span class="contact-separator"> | </span>
@@ -384,9 +332,7 @@
           ><i class="fab fa-whatsapp"></i
         ></a>
       </div>
-      <p style="margin-top: 40px; opacity: 0.8">
-        &copy; 2025, APU Mountain Travel | www.viajesapu.com
-      </p>
+      <p class="footer-copyright">&copy; 2025, APU Mountain Travel | www.viajesapu.com</p>
     </footer>
 
     <script src="../static/js/main.js"></script>
